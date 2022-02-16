@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Roboto+Serif:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(145, 145, 224);
+    overflow: hidden;
+}
+
+.container {
+    width: 45%;
+    margin: 32px auto;
+}
+
+.header {
+    height: 250px;
+    text-align: center;
+}
+
+.header h1 {
+    color: wheat;
+    font-size: 3.5rem;
+    font-family: 'Roboto Serif', sans-serif;
+    position: relative; /*top-right-bottom-left*/
+    animation: header;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    /*animation-iteration-count: infinite;*/
+}
+
+@keyframes header {
+    0% {top: -250px;}
+    100% {top: 100px}
+}
+
+.main {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+}
+
+.text-left {
+    position: relative;
+    animation: textLeft;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes textLeft {
+    0% {left: -1000px;}
+    85% {left: 50px;}
+    100% {left: 0;}
+}
+
+.text-right {
+    margin-top: 32px;
+    position: relative;
+    text-align: right;
+    animation: textRight;
+    animation-duration: 5s;
+}
+
+@keyframes textRight {
+    0% {right: -1000px;}
+    85% {right: 50px;}
+    100% {right: 0;}
+}
+
+.footer{
+  text-align: center;  
+}
+
+.btn {
+    opacity: 0;
+    border: 2px solid white;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+    display: inline-block;
+    margin: 2rem;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    animation: aniBtn;
+    animation-duration: 5s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aniBtn {
+    0% {opacity: 0;} /*0 - 1*/
+    100% {opacity: 1;}
+}
